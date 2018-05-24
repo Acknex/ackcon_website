@@ -1,0 +1,22 @@
+﻿body {
+    background: #fff;
+    color: #666;
+    display: block;
+    font-family: Tahoma, Verdana, Arial, Sans-Serif;
+    font-size: 11px;
+    line-height: 1.4;
+    max-width: 1500px;
+    margin: auto auto;
+    text-align: left;
+    width: 85%;
+}
+
+div {
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+.nav {
+    background: #efefef;
+    text-align: center;
+}
