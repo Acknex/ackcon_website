@@ -23,6 +23,18 @@ void anim_rst()
 		ent_animate(active, NULL, 0, 0);		
 }
 
+void add_vmask()
+{
+	if (active)
+	 active->vmask++;
+}
+
+void sub_vmask()
+{
+	if (active)
+	 active->vmask--;
+}
+
 void main()
 {
 	video_mode = 12;
@@ -33,6 +45,8 @@ void main()
 	level_load("helper.wmb");
 	on_r = camera_rst;
 	on_t = anim_rst;
+	on_v = add_vmask;
+	on_c = sub_vmask;
 	mouse_map = arrow;
 	while(count < 160)
 	{
